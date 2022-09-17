@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		59182B8528D5B6B400D0E017 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 59182B8428D5B6B400D0E017 /* main.c */; };
 		59182B9028D5B83400D0E017 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 59182B8F28D5B83400D0E017 /* main.c */; };
+		59182B9B28D5BA0400D0E017 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 59182B9A28D5BA0400D0E017 /* main.c */; };
 		597326C828D43FE400C70680 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 597326C728D43FE400C70680 /* main.c */; };
 		597326D528D4497500C70680 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 597326D428D4497500C70680 /* main.c */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		59182B8B28D5B83400D0E017 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		59182B9628D5BA0400D0E017 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -57,6 +67,8 @@
 		59182B8428D5B6B400D0E017 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		59182B8D28D5B83400D0E017 /* palindrome */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = palindrome; sourceTree = BUILT_PRODUCTS_DIR; };
 		59182B8F28D5B83400D0E017 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		59182B9828D5BA0400D0E017 /* AramStromnumber */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AramStromnumber; sourceTree = BUILT_PRODUCTS_DIR; };
+		59182B9A28D5BA0400D0E017 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		597326C428D43FE400C70680 /* DS_Questons */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DS_Questons; sourceTree = BUILT_PRODUCTS_DIR; };
 		597326C728D43FE400C70680 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		597326D228D4497500C70680 /* MinMaxElementInArray */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MinMaxElementInArray; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +84,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		59182B8A28D5B83400D0E017 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59182B9528D5BA0400D0E017 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -111,6 +130,14 @@
 			path = palindrome;
 			sourceTree = "<group>";
 		};
+		59182B9928D5BA0400D0E017 /* AramStromnumber */ = {
+			isa = PBXGroup;
+			children = (
+				59182B9A28D5BA0400D0E017 /* main.c */,
+			);
+			path = AramStromnumber;
+			sourceTree = "<group>";
+		};
 		597326BB28D43FE400C70680 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +145,7 @@
 				597326D328D4497500C70680 /* MinMaxElementInArray */,
 				59182B8328D5B6B400D0E017 /* reverseOfNumber */,
 				59182B8E28D5B83400D0E017 /* palindrome */,
+				59182B9928D5BA0400D0E017 /* AramStromnumber */,
 				597326C528D43FE400C70680 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -129,6 +157,7 @@
 				597326D228D4497500C70680 /* MinMaxElementInArray */,
 				59182B8228D5B6B400D0E017 /* reverseOfNumber */,
 				59182B8D28D5B83400D0E017 /* palindrome */,
+				59182B9828D5BA0400D0E017 /* AramStromnumber */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,6 +215,23 @@
 			productReference = 59182B8D28D5B83400D0E017 /* palindrome */;
 			productType = "com.apple.product-type.tool";
 		};
+		59182B9728D5BA0400D0E017 /* AramStromnumber */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59182B9C28D5BA0400D0E017 /* Build configuration list for PBXNativeTarget "AramStromnumber" */;
+			buildPhases = (
+				59182B9428D5BA0400D0E017 /* Sources */,
+				59182B9528D5BA0400D0E017 /* Frameworks */,
+				59182B9628D5BA0400D0E017 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AramStromnumber;
+			productName = AramStromnumber;
+			productReference = 59182B9828D5BA0400D0E017 /* AramStromnumber */;
+			productType = "com.apple.product-type.tool";
+		};
 		597326C328D43FE400C70680 /* DS_Questons */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 597326CB28D43FE400C70680 /* Build configuration list for PBXNativeTarget "DS_Questons" */;
@@ -235,6 +281,9 @@
 					59182B8C28D5B83400D0E017 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
+					59182B9728D5BA0400D0E017 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 					597326C328D43FE400C70680 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -260,6 +309,7 @@
 				597326D128D4497500C70680 /* MinMaxElementInArray */,
 				59182B8128D5B6B400D0E017 /* reverseOfNumber */,
 				59182B8C28D5B83400D0E017 /* palindrome */,
+				59182B9728D5BA0400D0E017 /* AramStromnumber */,
 			);
 		};
 /* End PBXProject section */
@@ -278,6 +328,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				59182B9028D5B83400D0E017 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59182B9428D5BA0400D0E017 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59182B9B28D5BA0400D0E017 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +383,22 @@
 			name = Debug;
 		};
 		59182B9328D5B83400D0E017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		59182B9D28D5BA0400D0E017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		59182B9E28D5BA0400D0E017 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -490,6 +564,15 @@
 			buildConfigurations = (
 				59182B9228D5B83400D0E017 /* Debug */,
 				59182B9328D5B83400D0E017 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59182B9C28D5BA0400D0E017 /* Build configuration list for PBXNativeTarget "AramStromnumber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59182B9D28D5BA0400D0E017 /* Debug */,
+				59182B9E28D5BA0400D0E017 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
