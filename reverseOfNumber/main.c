@@ -6,9 +6,16 @@
 //
 
 #include <stdio.h>
-
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
-    return 0;
+int main()
+{
+    int num,ld,rev=0;
+    printf("Enter number \n");
+    scanf("%d",&num);
+    while (num!=0) {
+        ld=num%10;
+        num=num/10;
+        rev=rev*10+ld;
+        
+        printf("Reverse of a number is %d\n",rev);
+    }
 }
